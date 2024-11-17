@@ -1,0 +1,28 @@
+h1 {
+    color: black;
+    background-color: brown;
+}
+h1 {
+    text-align: center;
+}
+li {
+    text-align: left;
+}
+h2 {
+    text-align: left;
+}
+a {
+    text-align: left;
+}
+a:hover{
+    color: chocolate;
+    text-transform: capitalize;
+text-decoration: none;
+font-weight: bolder;
+}
+* {
+    background-color: rgb(255, 255, 255);
+}
+hr{
+    color: rgb(59, 146, 161);
+}

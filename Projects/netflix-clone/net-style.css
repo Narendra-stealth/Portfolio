@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainbg {
+  width: 100vw;
+  height: 93vh;
+  background-image: url(assets/photos/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 0px;
+  /* background-size: max(1000px, 100vw) */
+}
+
+.bg {
+  background-color: black;
+  width: 100%;
+  height: 93vh;
+  opacity: 0.78;
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 83vw;
+  margin: auto;
+  padding-top: 23px;
+}
+
+.svglogo {
+  width: 148px;
+  height: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.textbox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 30px;
+}
+
+.textbox> :nth-child(1) {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 56px;
+  text-align: center;
+}
+
+.textbox> :nth-child(2) {
+  font-weight: 400px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.textbox> :nth-child(3) {
+  font-weight: 400px;
+  font-size: 24px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+.line {
+  width: 150%;
+  height: 2.7px;
+  background-color: rgb(48, 47, 47);
+}
+
+.english {
+  padding: 4px 20px;
+  border-radius: 4px;
+  border: 0.1px solid rgb(73, 72, 72);
+  background-color: rgba(23, 23, 23, 0.2);
+  color: white;
+  position: relative;
+  z-index: 6;
+}
+
+.signr {
+  background-color: red;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 15px;
+}
+
+.getbtnr {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  padding: 14px 26px;
+  margin-left: 5px;
+}
+
+.fillings>input {
+  background-color: rgba(23, 23, 23, 0.4);
+  border: 0.1px solid rgb(73, 72, 72);
+  color: white;
+  padding: 5px 24px;
+  font-size: 17px;
+  border-radius: 4px;
+  padding: 14px 180px;
+  padding-left: 16px;
+  font-weight: bold;
+}
+
+:placeholder-shown {
+  text-align: start;
+}
+
+.downarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 83vw;
+  margin: auto;
+  z-index: 8;
+  color: white;
+  position: relative;
+  top: 50px;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 700;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: flex-start;
+  position: relative;
+  top: 51px;
+  max-width: 83vw;
+  margin: auto;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.catogary {
+  color: white;
+  background-color: rgba(23, 23, 23, 0.4);
+  border: 0.1px solid rgb(80, 77, 77);
+  padding: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.presenting {
+  max-width: 81vw;
+  margin: auto;
+  align-items: center;
+  height: 276px;
+  display: flex;
+  flex-direction: row;
+  margin: 70px;
+  position: relative;
+  margin-left: 185px;
+  gap: 40px;
+}
+
+.slidebtn {
+  height: 90px;
+  width: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  height: 95%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.1);
+}
+
+.featurelist {
+  /* background-color: white; */
+  margin: auto;
+  padding: 20px;
+  gap: 50px;
+  max-width: 71vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.singles {
+  /* border: 2px solid red; */
+  color: rgb(199, 197, 197);
+  border-radius: 15px;
+  max-width: 1900px;
+  min-width: 330px;
+  height: 350px;
+  background: linear-gradient(149deg,
+      #192247 0%,
+      #210e17 96.86%);
+  font-size: 24px;
+}
+
+.singles :nth-child(2) {
+  max-width: 290px;
+  height: auto;
+  margin: auto;
+  padding: 40px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(146, 143, 143);
+}
+
+.singles :first-child {
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+.tittled {
+  max-width: 71vw;
+  margin: auto;
+  padding-bottom: 15px;
+  font-size: 32px;
+}
+.firstsvg{
+  padding-left: 72%;
+  padding-top: 18%;
+}
+.secondsvg{padding-left: 72%;
+  padding-top: 12%;
+}
+
+.thirdsvg{
+padding-left: 72%;
+padding-top: 18%;
+}
+
+.forthsvg{
+padding-left: 72%;
+padding-top: 12%;
+}

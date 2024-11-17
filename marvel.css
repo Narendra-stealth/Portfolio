@@ -1,0 +1,201 @@
+h1 , .first {
+    background-color: darkred;
+    color: white;
+    font-family: 'Frank', sans-serif;
+    text-align: center;
+    background-size: 100vw 100vh;
+}
+.explaination {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: large;
+    font-stretch: expanded;
+}
+.here {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: large;
+    font-stretch: expanded;
+}
+.first {
+    background-image: url(Photos/avangers/marvel\ long.png);
+    background-position: center;
+    background-size: cover;
+}
+.team {
+    font-weight: 900;
+    text-decoration:wavy;
+    text-decoration: darkgreen;
+    margin-left: 250px;
+}
+.official {
+    transition: background-color 0.3s ease;
+        text-decoration: none;
+        margin-left: 350px;
+        font-size: 200%;
+        background-color: rgb(184, 0, 0);
+        color: white;
+        background-size: 600PX 200PX   
+    }
+    .official:hover {
+        color: firebrick;
+        background-color: black;
+    }
+.added{
+    padding: 5px;
+    border: 5px solid black;
+    margin: 20px 0;
+    width: 50%;
+}
+.hulk{
+    color: white;
+    background-color: green;
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+}
+.superhero{
+    list-style-type: square;
+}
+.thor{
+    color: rgb(230, 230, 230);
+    background-color: rgb(0, 91, 209);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.captain{
+    color: rgb(245, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+    font-weight: bolder;
+}
+.witch{
+    color: rgb(255, 255, 255);
+    background-color: rgb(175, 20, 20);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+    font-weight: bolder;
+}
+.dr{
+    color: rgb(0, 0, 0);
+    background-color: rgb(225, 228, 69);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+    font-weight: bolder;
+}
+.eye{
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 0, 172);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+    font-weight: bolder;
+}
+.widow{
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid white;
+}
+.best{
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 0, 0);
+    padding: 5px;
+    width: 10%;
+    border: 3px solid rgb(255, 255, 255);
+    font-weight: bolder;
+}
+h5{
+    margin-left: 50px;
+}
+.bio {
+padding: 5px;
+color: rgb(255, 255, 255);
+background-color: rgb(77, 56, 30);
+text-wrap:pretty;
+text-wrap:inherit;
+text-indent: 20px;
+}
+.thor-bio {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 85, 128);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+}
+.dr-bio {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 145, 5);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+}
+.cap-bio {
+    padding: 5px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(216, 214, 214);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+}
+.wanda-bio {
+    padding: 5px;
+    color: rgb(0,0,0,);
+    background-color: rgb(188,180,169);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+    font-weight: bold;
+}
+.hawk-bio {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 67, 95);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+    font-weight: bold;
+}
+.hulk-bio {
+    padding: 5px;
+    color: rgb(6, 70, 46);
+    background-color: rgb(128,128,128);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+    font-weight: bold;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background-color: darkred;
+    padding-bottom: 20px;
+}
+nav > a:hover{
+    color: black;
+    font-weight: 900;
+}
+.widow-bio {
+    padding: 5px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(211, 211, 211);
+    text-wrap: pretty;
+    text-wrap: inherit;
+    text-indent: 20px;
+    font-weight: bold;
+}

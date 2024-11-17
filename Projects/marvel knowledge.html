@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU</title>
+    <style>
+        h1,
+        .first {
+            background-color: darkred;
+            color: white;
+            font-family: 'Frank', sans-serif;
+            text-align: center;
+            background-size: 100vw 100vh;
+        }
+
+        .explaination {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: large;
+            font-stretch: expanded;
+        }
+
+        .here {
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: large;
+            font-stretch: expanded;
+        }
+
+        .first {
+            background-image: url(Photos/avangers/marvel\ long.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .team {
+            font-weight: 900;
+            text-decoration: wavy;
+            text-decoration: darkgreen;
+            margin-left: 250px;
+        }
+
+        .official {
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-left: 350px;
+            font-size: 200%;
+            background-color: rgb(184, 0, 0);
+            color: white;
+            background-size: 600PX 200PX
+        }
+
+        .official:hover {
+            color: firebrick;
+            background-color: black;
+        }
+
+        .added {
+            padding: 5px;
+            border: 5px solid black;
+            margin: 20px 0;
+            width: 50%;
+        }
+
+        .hulk {
+            color: white;
+            background-color: green;
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+        }
+
+        .superhero {
+            list-style-type: square;
+        }
+
+        .thor {
+            color: rgb(230, 230, 230);
+            background-color: rgb(0, 91, 209);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        .captain {
+            color: rgb(245, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+            font-weight: bolder;
+        }
+
+        .witch {
+            color: rgb(255, 255, 255);
+            background-color: rgb(175, 20, 20);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+            font-weight: bolder;
+        }
+
+        .dr {
+            color: rgb(0, 0, 0);
+            background-color: rgb(225, 228, 69);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+            font-weight: bolder;
+        }
+
+        .eye {
+            color: rgb(255, 255, 255);
+            background-color: rgb(80, 0, 172);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+            font-weight: bolder;
+        }
+
+        .widow {
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid white;
+        }
+
+        .best {
+            color: rgb(255, 255, 255);
+            background-color: rgb(136, 0, 0);
+            padding: 5px;
+            width: 10%;
+            border: 3px solid rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h5 {
+            margin-left: 50px;
+        }
+
+        .bio {
+            padding: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(77, 56, 30);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+        }
+
+        .thor-bio {
+            padding: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(36, 85, 128);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+        }
+
+        .dr-bio {
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(252, 145, 5);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+        }
+
+        .cap-bio {
+            padding: 5px;
+            color: rgb(255, 0, 0);
+            background-color: rgb(216, 214, 214);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+        }
+
+        .wanda-bio {
+            padding: 5px;
+            color: rgb(0, 0, 0, );
+            background-color: rgb(188, 180, 169);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+            font-weight: bold;
+        }
+
+        .hawk-bio {
+            padding: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(48, 67, 95);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+            font-weight: bold;
+        }
+
+        .hulk-bio {
+            padding: 5px;
+            color: rgb(6, 70, 46);
+            background-color: rgb(128, 128, 128);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+            font-weight: bold;
+        }
+
+        nav>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: darkred;
+            padding-bottom: 20px;
+        }
+
+        nav>a:hover {
+            color: black;
+            font-weight: 900;
+        }
+
+        .widow-bio {
+            padding: 5px;
+            color: rgb(255, 0, 0);
+            background-color: rgb(211, 211, 211);
+            text-wrap: pretty;
+            text-wrap: inherit;
+            text-indent: 20px;
+            font-weight: bold;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .single {
+            text-shadow: 5px 5px 5px rgb(31, 31, 31);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The avengers</h1>
+    </header>
+    <main>
+        <section class="first">
+            <br>
+            <br>
+            <br> <br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br>
+        </section>
+        <br>
+        <p class="explaination">This website is for the people who are interested in marvel
+            but can't understand the <b>mcu (marvel cinematic univers)</b>
+        </p>
+        <h6 class="here">I am here to explain</h6>
+        <br>
+        <section class="added">
+            <h2 class="team">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>The avangers team members</i></h2>
+            <h4>So there are many avenger members but i will show you the main's
+                <b>You Can see more details about movies in official website below.</b>
+            </h4>
+        </section>
+        <a href="https://www.marvel.com" class="official">MARVEL</a>
+        <h5>--Here is the list--</h5>
+        <div class="superhero">
+            <li class="best">Ironman</li>
+            <li class="thor">Thor</li>
+            <li class="captain">capain america</li>
+            <li class="witch">scarlet witch</li>
+            <li class="dr">Doctor strange</li>
+            <li class="eye">Hawkeye</li>
+            <li class="widow">Black widow</li>
+            <li class="hulk">Hulk</li>
+            <br> <br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+        </div>
+        <h5 class="centered">Let's understand individualy</h5>
+        <br>
+        <br>
+        <li class="single">The iron man</li>
+        <img src="avangers/iron man.jpeg" style="float: left;">
+        <div style="clear: right;" class="bio">
+            <h6>Powers</h6>
+            <br>
+            <p><b>ironman</b> is powerfull cause of
+                money he makes by selling armory and weapons to his country
+                , Thats why he is expert on welding (just kidding).
+                So basically he has suit that is called "mark" and for suffix he ads version number
+                his suit is equipped with shields and guns + jets also
+                ,,<b>and he has a reactor in the middle of his body which powers the suit and protects him against
+                    cansor</b>
+                he can fly and shoot and protech.
+            </p>
+            <h6>Movies</h6>
+            <li class="Movies">Iron man 1</li>
+            <li class="Movies">Iron man 2</li>
+            <li class="Movies">Iron man 3</li>
+            <h6>Family</h6>
+            <p>He has 1 daughter and 1 wife which is dead on infinity war</p>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br> <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br> <br>
+        <li class="single">Thor</li>
+        <br>
+        <img src="avangers/thor.jpg" height="410" width="500" style="float: right;">
+        <div style="clear: left;" class="thor-bio">
+            <h6>Powers</h6>
+            <br>
+            <p><b>Thor odinson</b> , this is a special character of team avengers because of
+                his origin and powers , <i>He has power of thunder you can see in above picture
+                    and he has his hammer named <b>"mjonir"</b> and in his third movie he lost his hammer because his
+                    sister <b>Hela</b> smashed it
+                    so in endgame he created the hammer + axe combination with groot which is called
+                    <b>"Stormbreaker"</b>
+                    Shown on above picture.
+                </i> He can fly with his weapon and he can spam thunder, His hammer will be on his hand after he opens
+                his hands in air.</p>
+            <br>
+            <h6>Movies</h6>
+            <li class="Movies">Thor</li>
+            <li class="Movies">Thor: The dark world</li>
+            <li class="Movies">Thor: Ragnarok</li>
+            <li class="Movies">Thor: Love and thunder</li>
+            <br>
+            <h6>Family</h6>
+            <p>He is son of odin who is god of thunder , he has mother and little brother named <b>"Loki"</b> and loki
+                is cleaver and not trustworthy man
+                He has girlfriend from earth</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <li class="single">Captan America</li>
+        <br>
+        <img src="avangers/capton america.jpg" height="500" style="float: left;">
+        <div style="clear: right;" class="cap-bio">
+            <br>
+            <h6>Powers</h6>
+            <p><b>Captan America</b> has a shield which is his 50% power and another 50% is his body
+                which is anti aging and superhuman strenght , His sheild is made of <b>"Vibrainium"</b> thats why this
+                sheild never breaks.</p>
+            <br>
+            <h6>Movies</h6>
+            <li class="Movies">Captain America : The first avenger</li>
+            <li class="Movies">Captain America : The winter soldier</li>
+            <li class="Movies">Captain America : Civil war</li>
+            <li class="Movies">Captain America : Brave New world (upcoming)</li>
+            <br>
+            <h6>Family</h6>
+            <p>In family captain america only had girlfriend which is dead now so no family but he has one best friend
+                "Buckey" (winter soldier)</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <li class="single">Doctor strange</li>
+        <br>
+        <img src="avangers/dr strange.jpeg" height="500" style="float: right;">
+        <div style="clear: left;" class="dr-bio">
+            <br>
+            <h6>Powers</h6>
+            <p><b>Dotor strange</b> Has so many power because he is sourcerer and he learned all the magics , he has
+                time stone which controls time
+                and he has most power in avengers team </p>
+            <br>
+            <h6>Movies</h6>
+            <li class="Movies">Doctor strange </li>
+            <li class="Movies">Doctor strange : multiverse of madness</li>
+            <br>
+            <h6>Family</h6>
+            <p>Doctor strange has only his girlfriend is family and she is married on his second movie with someone else
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <li class="single">Scarlet witch</li>
+        <br>
+        <img src="avangers/wanda.jpeg" height="500" style="float: left;">
+        <div style="clear: right;" class="wanda-bio">
+            <br>
+            <h6>Powers</h6>
+            <p><b>wanda</b> has similar powers as doctor strange but she can control the surrounding things and items
+                with her hands </p><br>
+            <h6>Movies</h6>
+            <li class="Movies">Avengers : age of ultron</li>
+            <li class="Movies">Wanda vision</li>
+            <li class="Movies">Doctor strange : multiverse of madness</li>
+            <br>
+            <h6>Family</h6>
+            <p>She had a brother named <b>"Quiksilver"</b> and he is dead by the time of age of ultron movie and then
+                she has a husband who is member of avengers and created by tony stark equipped with Energy stone , yes
+                he is <b>"Vision"</b>.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <hr>
+        <br>
+        <li class="single">Hawkeye</li>
+        <br>
+        <img src="avangers/useless.jpeg" height="423px" style="float: right;">
+        <div style="clear: left;" class="hawk-bio">
+            <br>
+            <h6>Powers</h6>
+            <p><b>Hawkeye</b> is kind of useless avenger beacause he is normal human without any power and his weapon is
+                only a bow and he is archer.</p>
+            <br>
+            <h6>Movies</h6>
+            <p><b><i>He does not have any movie</i></b></p>
+            <br>
+            <h6>Family</h6>
+            <p><b>A wife named laura and three children</b></p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <li class="single">Hulk</li>
+        <img src="avangers/hulk.avif" height="444px" width="750px" style="float: left;">
+        <div class="hulk-bio" style="clear; right;">
+            <h6>Powers</h6>
+            <p><b>Hulk</b>, i know you guys already gussed his powers and you were right he has super strenght ,
+                actually he is noramal human <b>"Dr. Bruce banner"</b> but he can turn into a monster like above picture
+                after he gets angry</p>
+            <br>
+            <h6>Movies</h6>
+            <li class="Movies">Hulk</li>
+            <li class="Movies">The incredable Hulk</li>
+            <li class="Movies">Hulk VS</li>
+            <li class="Movies">The Incredable Hulk Returns</li>
+            <li class="Movies">Planet Hulk</li>
+            <li class="Movies">The Death Of Incredable Hulk</li>
+            <li class="Movies">Hulk Where Monster's Dwell</li>
+            <br>
+            <h6>Family</h6>
+            <p>He does not have family but a girlfriend <b>"Natasha"</b></p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <li class="single">Black Widow (Natasha)</li>
+        <img src="avangers/black widow.jpeg" height="495" style="float: right;">
+        <div class="widow-bio" style="clear: left;">
+            <h6>Powers</h6>
+            <p>Combinatian of Martial arts and beuty</p>
+            <br>
+            <h6>Movies</h6>
+            <li class="Movies">Black Widow</li>
+            <br>
+            <h6>Family</h6>
+            <p>She has a full Family of Mother , Father , Sister and in team avengers she loved hawkeye and she was
+                crush of hulk</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <nav>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="#">Copyright</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+            href="#">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Contect
+            us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.marvel.com">Main Website</a>
+        <br>
+    </nav>
+</footer>
+<br>
+
+</html>

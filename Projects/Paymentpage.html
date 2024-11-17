@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        .container {
+            background-color: rgb(226, 226, 226);
+            padding: 5px 20px 15px 20px;
+            border: 1px solid rgb(209, 208, 208);
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        input [type="text"],
+        input [type="email"],
+        input [type="number"],
+        input [type="password"],
+        input [type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        fieldset {
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .main-heading {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #5759db;
+            color: whitesmoke;
+            padding: 11px 19px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 98%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4649c9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main-heading">Payment form</h1>
+            <h2>Contect Information</h2>
+            <br>
+            <p>
+                Name:<input type="text" required placeholder="pankaj tripathi">
+            </p>
+            <p>
+                Adress:<textarea placeholder="Enter your Adress" name="Adress" id="Adress"></textarea>
+
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="Gender" id="Gender" required>
+                    Female <input type="radio" name="Gender" id="Gender" required>
+                </p>
+            </fieldset>
+            <p>
+                *Phone Number:<input type="tel" required placeholder="1234567890">
+            </p>
+            <p>
+                *Email:<input type="email" required placeholder="tripathi@gmail.com">
+            </p>
+            <p>
+                *Pincode:<input type="number" name="pincode" id="pincode" required placeholder="123456">
+            </p>
+            <h2>Payment Information</h2>
+            <p>
+                Card type*
+                <select>
+                    <option value="">--Select card--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Rupay">Rupay</option>
+                </select>
+            </p>
+            <p>
+                *Card number:<input type="number" name="Card number" id="Card number" required
+                    placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                *Expiry date:<input type="date" name="Expiry date" id="Expiry date" required>
+            </p>
+            <p>
+                *CVV:<input type="password" name="CVV" id="CVV" required placeholder="***">
+            </p>
+            <input type="submit" value="Pay now">
+        </form>
+    </div>
+</body>
+
+</html>
